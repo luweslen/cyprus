@@ -1,0 +1,21 @@
+.page-header {
+  background: var(--color-primary);
+  width: 100vw;
+  padding-bottom: 3rem;
+  padding-top: 1.2rem;
+}
+
+.page-header.inner .container {
+  max-width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header.inner h1 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.625rem;
+
+  color: var(--color-header-inner-title);
+}

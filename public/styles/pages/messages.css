@@ -1,0 +1,98 @@
+#page-messages {
+  min-width: 100vw;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* 
+ * main
+/* -------------------------------------------------- */
+main {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* 
+ * CARD
+/* -------------------------------------------------- */
+.card {
+  display: grid;
+  grid-template-columns: 10% 90%;
+
+  margin-bottom: 0.5rem;
+
+  position: relative;
+
+  transition: all 0.2s;
+}
+
+.card:hover {
+  background: linear-gradient(
+      90deg,
+      rgba(250, 156, 45, 0.1) 0.45%,
+      rgba(252, 253, 255, 0.1) 31.4%
+    ),
+    white;
+}
+
+.card::before {
+  content: " ";
+
+  width: 0.25rem;
+  height: 0%;
+  background-color: var(--color-secondary);
+
+  border-radius: 0.313rem 0 0 0.313rem;
+
+  position: absolute;
+  top: 0;
+  left: -1px;
+
+  transition: all 0.2s;
+}
+
+.card:hover::before {
+  height: 100%;
+}
+
+.card .column:last-child {
+  justify-self: flex-end;
+}
+
+.card .column > span {
+  display: block;
+
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 0.75rem; /* 12px of 16px root*/
+  text-transform: uppercase;
+
+  color: var(--color-card-label);
+}
+
+.progress .column p {
+  font-weight: 600;
+}
+
+.column.id {
+  font-family: IBM Plex Sans;
+  font-weight: 600;
+  color: var(--color-card-label);
+}
+
+.column.name {
+  font-family: IBM Plex Sans;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2.125rem;
+}
+
+@media (max-width: 770px) {
+  .card {
+    gap: 0.5rem;
+  }
+}

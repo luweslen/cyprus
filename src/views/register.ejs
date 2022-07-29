@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#41414C" />
+    <link rel="shortcut icon" href="/images/favicon.svg" type="image/png" />
+
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/partials/buttons.css" />
+    <link rel="stylesheet" href="/styles/partials/forms.css" />
+    <link rel="stylesheet" href="/styles/partials/animations.css" />
+    <link rel="stylesheet" href="/styles/pages/register.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+   </head>
+  <body id="page-register">
+    <main class="animate-up delay-2">
+      <form 
+        method="POST"
+        action="/register"
+        id="form-register-user"
+      >
+        <fieldset>
+          <legend>Cadastrar</legend>
+          <div class="separator light"></div>
+
+          <div class="input-wrapper">
+            <label for="name">Nome</label>
+            <input 
+              type="text" 
+              id="name" 
+              name="name"
+            />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="email">Email</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email"
+            />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="password">Senha</label>
+            <input 
+              type="password" 
+              id="password" 
+              name="password"
+            />
+          </div>
+
+          <div class="button-group column">
+            <button 
+              class="button green full" 
+              form="form-register-user" 
+              type="submit" 
+              title="Cadastrar"
+            >
+              Cadastrar
+            </button>
+            <a 
+              href="/login" 
+              class="button gray full"
+            >
+              Já tem cadastro?
+            </a>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
