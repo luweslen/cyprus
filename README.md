@@ -33,8 +33,9 @@ Cyprus is an audio recording and manipulation application. It was made for evalu
 This project was developed with the following technologies:
 
 - NodeJS
-- Javascript
 - Express
+- EJS
+- Javascript
 
 <a id="-how-to-use"></a>
 
