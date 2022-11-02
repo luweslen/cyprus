@@ -20,7 +20,7 @@
 
 ## 💻 **Project**
 
-Cyprus is an audio recording and manipulation application. It was made for evaluation in a discipline.
+Cyprus is an application to calculate hourly value on freelance projects
 
 <div align="center">
   <img alt="Preview" title="Preview" src=".github/preview.png" width="720px"/>
